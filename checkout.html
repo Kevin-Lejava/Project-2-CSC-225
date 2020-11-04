@@ -58,61 +58,63 @@
     <h1>Please provide your credit card information and shipping address.</h1>
 
     <form>
-        <legend>Credit Card Information</legend>
-        <div class="form-row">
-            <div class="col">
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="first-name" class="form-control" placeholder="First name"
-                    required><br>
+        <fieldset>
+            <legend>Credit Card Information</legend>
+            <div class="form-row">
+                <div class="col">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" class="form-control" placeholder="First name"
+                        required><br>
 
-                <label for="creditNumber">Credit Card Number</label>
-                <input type="text" id="creditNumber" name="creditNumber" class="form-control"
-                    placeholder="XXXX-XXXX-XXXX-XXXX" required><br>
+                    <label for="creditNumber">Credit Card Number</label>
+                    <input type="text" id="creditNumber" name="creditNumber" class="form-control"
+                        placeholder="XXXX-XXXX-XXXX-XXXX" required><br>
 
-                <label for="CVV">CVV</label>
-                <input type="text" id="CVV" name="CVV" class="form-control" required><br>
+                    <label for="CVV">CVV</label>
+                    <input type="text" id="CVV" name="CVV" class="form-control" required><br>
+                </div>
+                <div class="col">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" class="form-control" placeholder="Last name"
+                        required><br>
+
+                    <label for="expiration-date">Expiration Date</label>
+                    <input type="date" id="expiration-date" name="expiration-date" required><br>
+                </div>
             </div>
-            <div class="col">
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name" class="form-control" placeholder="Last name"
-                    required><br>
+        </fieldset>
+        <fieldset>
+            <Legend>Billing Information</Legend>
 
-                <label for="expiration-date">Expiration Date</label>
-                <input type="date" id="expiration-date" name="expiration-date" required><br>
+            <div class="form-row">
+
+                <div class="col">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" class="form-control" id="address" required><br>
+
+                    <label for="city">City</label>
+                    <input type="text" name="city" class="form-control" id="city" required><br>
+                </div>
+
+                <div class="col">
+                    <label for="address2">Address 2</label>
+                    <input type="text" name="address2" class="form-control" id="address2" placeholder="Optional"><br>
+
+                    <label for="state">State</label>
+                    <select id="state" name="state" class="form-control" required>
+                        <option value>...</option>
+                        <option value="NY">NY</option>
+                        <option value="NJ">NJ</option>
+                        <option value="Any-other">Any of the other 48 states</option>
+                    </select><br>
+                </div>
+
+                <div class="col">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" name="zip" class="form-control" id="zip" required><br>
+                </div>
             </div>
-        </div>
-
-        <Legend>Billing Information</Legend>
-
-        <div class="form-row">
-
-            <div class="col">
-                <label for="address">Address</label>
-                <input type="text" name="address" class="form-control" id="inputAddress" required><br>
-
-                <label for="city">City</label>
-                <input type="text" name="city" class="form-control" id="inputCity" required><br>
-            </div>
-
-            <div class="col">
-                <label for="address2">Address 2</label>
-                <input type="text" name="address2" class="form-control" id="address2" placeholder="Optional"><br>
-
-                <label for="state">State</label>
-                <select id="state" name="state" class="form-control" required>
-                    <option selected>...</option>
-                    <option>NY</option>
-                    <option>NJ</option>
-                    <option>Any of the other 48 states</option>
-                </select><br>
-            </div>
-
-            <div class="col">
-                <label for="zip">Zip Code</label>
-                <input type="text" name="zip" class="form-control" id="zip" required><br>
-            </div>
-        </div>
-
+        </fieldset>
 
         <button type="submit" value="submit" class="btn btn-primary">Place Order</button>
     </form>
